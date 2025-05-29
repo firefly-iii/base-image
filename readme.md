@@ -21,7 +21,7 @@
   </p>
 <!--- END PROJECT LOGO -->
 
-This is the repository that holds the "base" images for [Firefly III](https://github.com/firefly-iii/firefly-iii/) and the [Firefly III Data Importer](https://github.com/firefly-iii/data-importer/). Both tools need this base image to run correctly. The Dockerfiles for this base image is stored and built on GitHub.
+This is the repository that holds the "base" images for [Firefly III](https://github.com/firefly-iii/firefly-iii/) and the [Firefly III Data Importer](https://github.com/firefly-iii/data-importer/). Both tools need this base image to run correctly. The Dockerfiles for this base image are stored and built on GitHub.
 
 There are two variants of the base image, and they both come in two labels. You can find the images on [Docker Hub](https://hub.docker.com/r/fireflyiii/base) or by pulling `fireflyiii/base`.
 
