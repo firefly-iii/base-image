@@ -25,6 +25,7 @@ jobs:
           php-version: 8.4
       - name: Compile Dockerfiles and update repository
         run: |
+          sudo timedatectl set-timezone Europe/Amsterdam
           echo "Update counters"
           BUILDNR=$(<"counter.txt")
           BUILDNR=$((BUILDNR + 1))
