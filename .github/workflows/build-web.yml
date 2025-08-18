@@ -129,7 +129,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY_IMAGE }}
           tags: |
-            ${{ github.event.inputs.base_tag }}
+            ${{ inputs.base_tag || 'latest' }}
 
       - name: Create manifest list and push
         working-directory: ${{ runner.temp }}/digests
