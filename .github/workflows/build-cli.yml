@@ -41,7 +41,7 @@ jobs:
           git add counter.txt
           git add Dockerfile.cli
           git add Dockerfile.web
-          git commit -m "Auto-update build files for build #${BUILDNR}."
+          git commit -m "Auto-update build files for CLI image build #${BUILDNR}."
           git push
   build:
     runs-on: ubuntu-latest
