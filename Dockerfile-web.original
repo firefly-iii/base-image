@@ -11,7 +11,7 @@ ENV FIREFLY_III_PATH=/var/www/html COMPOSER_ALLOW_SUPERUSER=1 DEBIAN_FRONTEND=no
 #
 # Some labels to help identify this container.
 #
-LABEL build_version="5.1" maintainer="james@firefly-iii.org"
+LABEL build_version="5.2" maintainer="james@firefly-iii.org"
 
 #
 # Make sure that there is a volume for attachment uploads.

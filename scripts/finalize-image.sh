@@ -1,8 +1,9 @@
 #!/bin/bash
 
 echo "Now in finalize-image.sh for Firefly III"
-echo "Script version is 1.0.3 (2020-12-16)"
-echo "Running as '$(whoami)'."
+echo "Script version is 1.0.4 (2025-11-29)"
+echo "Running as  '$(whoami)'."
+echo "PHP version $(php -v | head -n 1)"
 
 mkdir -p $FIREFLY_III_PATH/storage/app/public
 mkdir -p $FIREFLY_III_PATH/storage/build
