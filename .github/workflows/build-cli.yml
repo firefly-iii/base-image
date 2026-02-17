@@ -26,7 +26,8 @@ jobs:
       - name: Compile Dockerfiles and update repository
         run: |
           sudo timedatectl set-timezone Europe/Amsterdam
-          echo "Update counters for build '$version'"
+          echo "Update counters for build '$basetag'"
+          exit 1
           BUILDNR=$(<"counter.txt")
           BUILDNR=$((BUILDNR + 1))
           git pull origin main
