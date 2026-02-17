@@ -26,7 +26,7 @@ jobs:
       - name: Compile Dockerfiles and update repository
         run: |
           sudo timedatectl set-timezone Europe/Amsterdam
-          echo "Update counters"
+          echo "Update counters for build '$basetag'"
           BUILDNR=$(<"counter.txt")
           BUILDNR=$((BUILDNR + 1))
           git pull origin main
@@ -43,6 +43,8 @@ jobs:
           git add Dockerfile.web
           git commit -m "Auto-update build files for web image build #${BUILDNR}."
           git push
+        env:
+          basetag: ${{ inputs.base_tag || 'latest' }}
   build:
     runs-on: ubuntu-latest
     needs:
