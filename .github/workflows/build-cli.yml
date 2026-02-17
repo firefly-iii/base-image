@@ -27,7 +27,6 @@ jobs:
         run: |
           sudo timedatectl set-timezone Europe/Amsterdam
           echo "Update counters for build '$basetag'"
-          exit 1
           BUILDNR=$(<"counter.txt")
           BUILDNR=$((BUILDNR + 1))
           git pull origin main
