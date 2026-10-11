@@ -27,13 +27,13 @@ There are two variants of the base image, and they both come in two labels. You 
 
 ## Base image (web version)
 
-The web version of the base image is built from `serversideup/php:8.4-fpm-nginx`. In [Dockerfile-web.original](https://github.com/firefly-iii/base-image/blob/main/Dockerfile-web.original) you can see that the base image adds some scripts and installs some PHP extensions.
+The web version of the base image is built from `serversideup/php:8.5-fpm-nginx`. In [Dockerfile-web.original](https://github.com/firefly-iii/base-image/blob/main/Dockerfile-web.original) you can see that the base image adds some scripts and installs some PHP extensions.
 
 It is labeled as either `latest` or `develop`, with the latter being a test- and development version of the image (it may be unstable).
 
 ## Base image (CLI version)
 
-The CLI version of the base image is built from `serversideup/php:8.4-cli`. In [Dockerfile-cli.original](https://github.com/firefly-iii/base-image/blob/main/Dockerfile-cli.original) you can see a similar process as the web version. Scripts are added and PHP extensions are installed.
+The CLI version of the base image is built from `serversideup/php:8.5-cli`. In [Dockerfile-cli.original](https://github.com/firefly-iii/base-image/blob/main/Dockerfile-cli.original) you can see a similar process as the web version. Scripts are added and PHP extensions are installed.
 
 It is labeled as either `latest-cli` or `develop-cli`, with the latter being a test- and development version of the image (it may be unstable).
 
