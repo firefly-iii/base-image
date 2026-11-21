@@ -19,5 +19,5 @@ jobs:
       - name: Run GitHub Actions Version Updater
         uses: saadmk11/github-actions-version-updater@v1.0.3
         with:
-          token: ${{ secrets.WORKFLOW_SECRET }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           update_version_with: release-commit-sha
