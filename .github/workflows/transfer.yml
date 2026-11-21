@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Transfer
-        uses: lando/transfer-issue-action@v2
+        uses: lando/transfer-issue-action@6cf14bfdd14bae08711cd96787826dfa037c0186  # v2.1.0
         with:
           token: ${{ secrets.TRANSFER_ISSUE_TOKEN }}
           router: move:firefly-iii
