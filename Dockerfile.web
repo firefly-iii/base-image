@@ -1,17 +1,17 @@
 #
 # The base image contains nginx and PHP
 #
-FROM serversideup/php:8.5-fpm-nginx
+FROM serversideup/php:8.6-fpm-nginx
 
 #
 # Various variables and container settings
 #
-ENV FIREFLY_III_PATH=/var/www/html COMPOSER_ALLOW_SUPERUSER=1 DEBIAN_FRONTEND=noninteractive PHP_MAX_EXECUTION_TIME=300 PHP_ERROR_REPORTING=24575 SHOW_WELCOME_MESSAGE=false BASE_IMAGE_BUILD=428 BASE_IMAGE_DATE="21-11-2026 06:34:54 CET" PHP_OPCACHE_ENABLE=1
+ENV FIREFLY_III_PATH=/var/www/html COMPOSER_ALLOW_SUPERUSER=1 DEBIAN_FRONTEND=noninteractive PHP_MAX_EXECUTION_TIME=300 PHP_ERROR_REPORTING=24575 SHOW_WELCOME_MESSAGE=false BASE_IMAGE_BUILD=429 BASE_IMAGE_DATE="23-11-2026 07:42:57 CET" PHP_OPCACHE_ENABLE=1
 
 #
 # Some labels to help identify this container.
 #
-LABEL build_version="5.2" maintainer="james@firefly-iii.org"
+LABEL build_version="5.3" maintainer="james@firefly-iii.org"
 
 #
 # Make sure that there is a volume for attachment uploads.
