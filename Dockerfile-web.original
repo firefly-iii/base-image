@@ -34,7 +34,7 @@ RUN set -eux; \
     chmod uga+x /usr/local/bin/wait-for-it.sh && \
     chmod uga+x /usr/local/bin/finalize-image.sh && \
     apt update && apt install -y curl locales && \
-    install-php-extensions intl bcmath memcache sockets && \
+    install-php-extensions intl bcmath sockets && \
     rm -rf /var/lib/apt/lists/*
 
 USER www-data
