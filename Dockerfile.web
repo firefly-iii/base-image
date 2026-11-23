@@ -6,7 +6,7 @@ FROM serversideup/php:8.6-fpm-nginx
 #
 # Various variables and container settings
 #
-ENV FIREFLY_III_PATH=/var/www/html COMPOSER_ALLOW_SUPERUSER=1 DEBIAN_FRONTEND=noninteractive PHP_MAX_EXECUTION_TIME=300 PHP_ERROR_REPORTING=24575 SHOW_WELCOME_MESSAGE=false BASE_IMAGE_BUILD=431 BASE_IMAGE_DATE="23-11-2026 17:05:30 CET" PHP_OPCACHE_ENABLE=1
+ENV FIREFLY_III_PATH=/var/www/html COMPOSER_ALLOW_SUPERUSER=1 DEBIAN_FRONTEND=noninteractive PHP_MAX_EXECUTION_TIME=300 PHP_ERROR_REPORTING=24575 SHOW_WELCOME_MESSAGE=false BASE_IMAGE_BUILD=432 BASE_IMAGE_DATE="23-11-2026 17:52:13 CET" PHP_OPCACHE_ENABLE=1
 
 #
 # Some labels to help identify this container.
@@ -34,7 +34,7 @@ RUN set -eux; \
     chmod uga+x /usr/local/bin/wait-for-it.sh && \
     chmod uga+x /usr/local/bin/finalize-image.sh && \
     apt update && apt install -y curl locales && \
-    install-php-extensions intl bcmath memcached sockets && \
+    install-php-extensions intl bcmath sockets && \
     rm -rf /var/lib/apt/lists/*
 
 USER www-data
